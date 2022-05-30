@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.Admin" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.Admin" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" />
+  <xs:complexType name="PCTurkuazUser">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" base="q1:PropertyClass">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BoGuid" type="ser:guid" />
+          <xs:element minOccurs="0" name="BoTimeStamp" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BrandCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CorporateCodeWorkingWith" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CorporateWorkingWith" type="xs:int" />
+          <xs:element minOccurs="0" name="DefaultCurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DefaultCurrencyKurusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DefaultDistributorFirmId" type="xs:int" />
+          <xs:element minOccurs="0" name="DefaultVATCodeString" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DomainName" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FavoriteMenuItems" nillable="true" type="q2:ArrayOfanyType" />
+          <xs:element minOccurs="0" name="FooterNote" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="IsSuper" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastLoginDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastMessageCheck" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastReminderCheck" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastWarningCheck" type="xs:dateTime" />
+          <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MenuList" nillable="true" type="q3:ArrayOfanyType" />
+          <xs:element minOccurs="0" name="MotherCorpWorkingWith" type="xs:int" />
+          <xs:element minOccurs="0" name="PasswordAgingDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PasswordChanged" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PersonnelFullName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PersonnelId" type="xs:int" />
+          <xs:element minOccurs="0" name="SubUserAccountName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubUserId" type="xs:int" />
+          <xs:element minOccurs="0" name="TopBrandCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserLanguage" type="xs:short" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCTurkuazUser" nillable="true" type="tns:PCTurkuazUser" />
+</xs:schema>

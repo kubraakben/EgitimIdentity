@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.Personnel.Education" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.Personnel.Education" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" />
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" />
+  <xs:complexType name="PCPersonnelPrimaryInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" base="q1:PropertyClass">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BilisimPersonnelId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="BirthCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BodySize" type="xs:short" />
+          <xs:element minOccurs="0" name="EducationFirmId" type="xs:int" />
+          <xs:element minOccurs="0" name="EducationStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="EducationType" type="xs:int" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FootSize" type="xs:short" />
+          <xs:element minOccurs="0" name="FullUsername" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsEducator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobID" type="xs:int" />
+          <xs:element minOccurs="0" name="JobName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LicenseType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganisationId" type="xs:int" />
+          <xs:element minOccurs="0" name="PersonnelID" type="xs:int" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCPersonnelPrimaryInfo" nillable="true" type="tns:PCPersonnelPrimaryInfo" />
+  <xs:complexType name="ArrayOfPCPersonnelPrimaryInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PCPersonnelPrimaryInfo" nillable="true" type="tns:PCPersonnelPrimaryInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPCPersonnelPrimaryInfo" nillable="true" type="tns:ArrayOfPCPersonnelPrimaryInfo" />
+  <xs:complexType name="PCPersonnel">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" base="q2:PCInvolvedParty">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BilisimPersonnelId" type="xs:int" />
+          <xs:element minOccurs="0" name="BilisimPersonnelIdAlpha" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Birth_city" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BloodType" type="xs:int" />
+          <xs:element minOccurs="0" name="BodySize" type="xs:short" />
+          <xs:element minOccurs="0" name="BrandCodeForQSB" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BrandCodeOtherForQSB" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BusinessFamily" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CanAccessDepartmentPortfolio" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CanAccessEquivalentFirmPortfolio" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CanAccessFirmPortfolio" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CanAccessPoolPortfolio" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CheckLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CheckTextNew" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CheckTextOld" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DOHASStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DepartmentID" type="xs:int" />
+          <xs:element minOccurs="0" name="DepartmentOfRegistry" type="xs:int" />
+          <xs:element minOccurs="0" name="EducationFirmID" type="xs:int" />
+          <xs:element minOccurs="0" name="EducationStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="Education_type" type="xs:int" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmergencyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmergencyPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirmCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirmOrganisationID" type="xs:int" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FootSize" type="xs:short" />
+          <xs:element minOccurs="0" name="GSMNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InterPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAudiPrimePlus" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsDodPersonnel" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsEducator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsIncludedInQSB" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsRoleChange" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsSeller" type="xs:boolean" />
+          <xs:element minOccurs="0" name="JobID" type="xs:int" />
+          <xs:element minOccurs="0" name="JobName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="JobRelatedInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastAdvancementDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LeaveDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="License_type" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LowerBodySize" type="xs:short" />
+          <xs:element minOccurs="0" name="ManagerOfRegistry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Marital_status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MarriageDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MultipleLoginId" type="xs:int" />
+          <xs:element minOccurs="0" name="NationalityId" type="xs:int" />
+          <xs:element minOccurs="0" name="NumberOfChildren" type="xs:int" />
+          <xs:element minOccurs="0" name="NviLockedStatus" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OccupationForQSB" type="xs:int" />
+          <xs:element minOccurs="0" name="OrganisationJobID" type="xs:int" />
+          <xs:element minOccurs="0" name="PdksCardNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PersonnelDocType" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PersonnelGroup" type="xs:short" />
+          <xs:element minOccurs="0" name="PersonnelID" type="xs:int" />
+          <xs:element minOccurs="0" name="PersonnelType" type="xs:short" />
+          <xs:element minOccurs="0" name="PortfolioCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PremiumCardNumber" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RegNumStr" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegistrationNumber" type="xs:long" />
+          <xs:element minOccurs="0" name="RelationBrandCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RelationDocType" type="xs:int" />
+          <xs:element minOccurs="0" name="RelationJobCode" type="xs:int" />
+          <xs:element minOccurs="0" name="StartOfExistingWorkdate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StartOfWorkdate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TYSUpPersonnelID" type="xs:int" />
+          <xs:element minOccurs="0" name="TargetJobID1" type="xs:int" />
+          <xs:element minOccurs="0" name="TargetJobID2" type="xs:int" />
+          <xs:element minOccurs="0" name="TcTaxIdentityNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TysManagerInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpPersonnelID" type="xs:int" />
+          <xs:element minOccurs="0" name="UpPersonnelName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserPassword" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WifeBirthDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCPersonnel" nillable="true" type="tns:PCPersonnel" />
+  <xs:complexType name="ArrayOfPCPersonnelBrandInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PCPersonnelBrandInfo" nillable="true" type="tns:PCPersonnelBrandInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPCPersonnelBrandInfo" nillable="true" type="tns:ArrayOfPCPersonnelBrandInfo" />
+  <xs:complexType name="PCPersonnelBrandInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AffiliatedDirectorate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AuthorizedDealerShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DefaultBrand" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Job" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KhpBrand" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KhpOtherBrand" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobilePhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PersonnelId" type="xs:int" />
+      <xs:element minOccurs="0" name="PersonnelName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCPersonnelBrandInfo" nillable="true" type="tns:PCPersonnelBrandInfo" />
+  <xs:complexType name="ArrayOfPCFirmOrganisation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PCFirmOrganisation" nillable="true" type="tns:PCFirmOrganisation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPCFirmOrganisation" nillable="true" type="tns:ArrayOfPCFirmOrganisation" />
+  <xs:complexType name="PCFirmOrganisation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" base="q3:PropertyClass">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Department_id" type="xs:int" />
+          <xs:element minOccurs="0" name="Education_firm_id" type="xs:int" />
+          <xs:element minOccurs="0" name="Firm_organisation_id" type="xs:int" />
+          <xs:element minOccurs="0" name="OrganisationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Organisation_level" type="xs:short" />
+          <xs:element minOccurs="0" name="Ret_code" type="xs:int" />
+          <xs:element minOccurs="0" name="Up_department_id" type="xs:int" />
+          <xs:element minOccurs="0" name="Up_firm_organisation_id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCFirmOrganisation" nillable="true" type="tns:PCFirmOrganisation" />
+  <xs:complexType name="ArrayOfPCCityCounty">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PCCityCounty" nillable="true" type="tns:PCCityCounty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPCCityCounty" nillable="true" type="tns:ArrayOfPCCityCounty" />
+  <xs:complexType name="PCCityCounty">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" base="q4:PropertyClass">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" type="xs:int" />
+          <xs:element minOccurs="0" name="County_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Ret_code" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCCityCounty" nillable="true" type="tns:PCCityCounty" />
+</xs:schema>

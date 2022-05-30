@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Common.Organisation" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Common.Organisation" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" />
+  <xs:complexType name="ArrayOfPCConsultant">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PCConsultant" nillable="true" type="tns:PCConsultant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPCConsultant" nillable="true" type="tns:ArrayOfPCConsultant" />
+  <xs:complexType name="PCConsultant">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BrandCodes" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="DealerId" type="xs:int" />
+      <xs:element minOccurs="0" name="FirmCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PersonnelId" type="xs:int" />
+      <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PCConsultant" nillable="true" type="tns:PCConsultant" />
+  <xs:complexType name="PCTempLocation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" base="q2:PropertyClass">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Accuracy" type="xs:int" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="District" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+          <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+          <xs:element minOccurs="0" name="Neighborhood" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" type="xs:int" />
+          <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserAgent" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserIp" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCTempLocation" nillable="true" type="tns:PCTempLocation" />
+</xs:schema>

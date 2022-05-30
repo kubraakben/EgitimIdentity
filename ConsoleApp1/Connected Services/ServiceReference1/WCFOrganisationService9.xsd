@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.Organisation" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.Organisation" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" />
+  <xs:import schemaLocation="http://turkuazwcfpreprod/WCFInternalServices/Organisation/WCFOrganisationService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" />
+  <xs:complexType name="ArrayOfPCCommonFirmFeature">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PCCommonFirmFeature" nillable="true" type="tns:PCCommonFirmFeature" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPCCommonFirmFeature" nillable="true" type="tns:ArrayOfPCCommonFirmFeature" />
+  <xs:complexType name="PCCommonFirmFeature">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" base="q1:PropertyClass">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BrandCodes" nillable="true" type="q2:ArrayOfstring" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CommonFirmID" type="xs:int" />
+          <xs:element minOccurs="0" name="Definition" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirmFeature" type="xs:int" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCCommonFirmFeature" nillable="true" type="tns:PCCommonFirmFeature" />
+  <xs:complexType name="PCComTemp">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" base="q3:PropertyClass">
+        <xs:sequence>
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" minOccurs="0" name="PCBranchAddress" nillable="true" type="q4:PCAddress" />
+          <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" minOccurs="0" name="PCBranchAddress2" nillable="true" type="q5:PCAddress" />
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" minOccurs="0" name="PCBranchPhone" nillable="true" type="q6:PCContact" />
+          <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" minOccurs="0" name="PCBranchPhone2" nillable="true" type="q7:PCContact" />
+          <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" minOccurs="0" name="PCCenterAddress" nillable="true" type="q8:PCAddress" />
+          <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" minOccurs="0" name="PCCenterFax" nillable="true" type="q9:PCContact" />
+          <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon.General" minOccurs="0" name="PCCenterPhone" nillable="true" type="q10:PCContact" />
+          <xs:element minOccurs="0" name="PCFirm" nillable="true" type="tns:PCCommonFirm" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCComTemp" nillable="true" type="tns:PCComTemp" />
+  <xs:complexType name="PCCommonFirm">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/GT.TurkuazCommon" base="q11:PropertyClass">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AboutusLink" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AuthDocEditDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="AuthDocNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AuthDocValidityDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CampaignsLink" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CentralFirmId" type="xs:int" />
+          <xs:element minOccurs="0" name="CentralMersisNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CommonFirmName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CoordinateInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomsAdministrationCode" type="xs:short" />
+          <xs:element minOccurs="0" name="CustomsFirmCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DefaultDistributorFirmId" type="xs:int" />
+          <xs:element minOccurs="0" name="DsCustomerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EArchiveStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EDespatchAdviceStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EMail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FacebookLink" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FullAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HedTelephone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="InstagramLink" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsClosed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsEArchiveAmenable" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsEDespatchAdviceAmenable" type="xs:boolean" />
+          <xs:element minOccurs="0" name="KEPAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LinkedinLink" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MTVTaxNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MTVTaxOffice" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MTVTaxOfficeCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MersisNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OEMeMail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherSector" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PartDistributor" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PartMainSource" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RelatedCustomerID" type="xs:int" />
+          <xs:element minOccurs="0" name="SakActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SakSupplier" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Sector" type="xs:short" />
+          <xs:element minOccurs="0" name="ServicePointsLink" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShortTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxOffice" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxOfficeCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TradeRegistrationNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TypeExp" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TypePrm" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserAccount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VehicleDistributor" type="xs:boolean" />
+          <xs:element minOccurs="0" name="VehicleMainSource" type="xs:boolean" />
+          <xs:element minOccurs="0" name="WebAddress" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PCCommonFirm" nillable="true" type="tns:PCCommonFirm" />
+  <xs:complexType name="ArrayOfPCCommonFirm">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PCCommonFirm" nillable="true" type="tns:PCCommonFirm" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPCCommonFirm" nillable="true" type="tns:ArrayOfPCCommonFirm" />
+</xs:schema>

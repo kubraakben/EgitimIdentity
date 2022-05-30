@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using Microsoft.AspNetCore.Authentication;
+
+<a class="btn btn-primary" asp-action="LogOut">Çıkış Yap</a>
+<a class="btn btn-success" asp-action="GetRefreshToken">Refresh Token</a>
+<h3>Bu sayfayı sadece üye olan kullanıcılar görebilir.</h3>
+
+<h4>Claim values</h4>
+<table class="table table table-bordered">
+    <thead>
+        <tr>
+            <th>Claim Type</th>
+            <th>Claim Value</th>
+        </tr>
+    </thead>
+    @foreach (var item in User.Claims)
+    {
+        <tr>
+            <td>@item.Type</td>
+            <td>@item.Value</td>
+        </tr>
+    }
+</table>
+
+<h4>Authentication values</h4>
+<table class="table table table-bordered">
+    <thead>
+        <tr>
+            <th>Auth Property Key</th>
+            <th>Auth Property Value</th>
+        </tr>
+    </thead>
+    @foreach (var item in(await Context.AuthenticateAsync()).Properties.Items)
+    {
+        <tr>
+            <td>@item.Key</td>
+            <td>@item.Value</td>
+        </tr>
+    }
+</table>
