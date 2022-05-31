@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K4cpV7h2qhOvGe66PjXytJJYoKU8vAoZNydNtdr0dVXG61PL9daaI1m9wp1NpkPIjCfG14N1fodgCh5jt+7RGA==",
+  "dgSpecHash": "lPkIyy0P4Liy0d0VqcMxhsi33QBH4tNEnq9vugj1yA0LckaW0o/SSbnbkQQzKPfNWt62D9B0gMjr01NJEbd8mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\haticeo\\source\\repos\\Client1\\Client1.csproj",
+  "projectFilePath": "C:\\Projects\\EgitimIdentity\\Client1\\Client1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\haticeo\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
     "C:\\Users\\haticeo\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.8\\microsoft.aspnetcore.authentication.openidconnect.3.1.8.nupkg.sha512",

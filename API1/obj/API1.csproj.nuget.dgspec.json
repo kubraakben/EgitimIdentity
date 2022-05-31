@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\haticeo\\source\\repos\\API1\\API1.csproj": {}
+    "C:\\Projects\\EgitimIdentity\\API1\\API1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\haticeo\\source\\repos\\API1\\API1.csproj": {
+    "C:\\Projects\\EgitimIdentity\\API1\\API1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\haticeo\\source\\repos\\API1\\API1.csproj",
+        "projectUniqueName": "C:\\Projects\\EgitimIdentity\\API1\\API1.csproj",
         "projectName": "API1",
-        "projectPath": "C:\\Users\\haticeo\\source\\repos\\API1\\API1.csproj",
+        "projectPath": "C:\\Projects\\EgitimIdentity\\API1\\API1.csproj",
         "packagesPath": "C:\\Users\\haticeo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\haticeo\\source\\repos\\API1\\obj\\",
+        "outputPath": "C:\\Projects\\EgitimIdentity\\API1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

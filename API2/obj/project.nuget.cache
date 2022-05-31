@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqIV/JYxOCA2BIBM8EdLBnCc0U2nR0jTp8IXAARPruygcxyrRbiYXt6GlGQxdpe/3ZKybNDb8MZYqv9jsHNxGg==",
+  "dgSpecHash": "q+nIz3QyaI6XtOb06+447UL03/BQmYvtdqCteusTNWWftj6BbH5octntXyERriAxRY+rnxJGahS+G1Ul5ucAEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\haticeo\\source\\repos\\API2\\API2.csproj",
+  "projectFilePath": "C:\\Projects\\EgitimIdentity\\API2\\API2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\haticeo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.8\\microsoft.aspnetcore.authentication.jwtbearer.3.1.8.nupkg.sha512",
     "C:\\Users\\haticeo\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",

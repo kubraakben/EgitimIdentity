@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fVpUQmUk49ykfr1XB16M8ZGqklMl4zDNiLuY/TBPp9/fvvyo6t5I2IgaznnbA8W+vSeAewgu9V5TcG2CqXitag==",
+  "dgSpecHash": "JCDpP1TUaJkcg2dD4uvUK7DeGKxxOKLJwGilMq11jCnDD08jfleiSE8IMM4nmXB/tV5E8DCRZuHTEiV8AXRMcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\haticeo\\source\\repos\\EgitimIdentityServer\\EgitimIdentityServer.csproj",
+  "projectFilePath": "C:\\Projects\\EgitimIdentity\\EgitimIdentityServer\\EgitimIdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\haticeo\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
     "C:\\Users\\haticeo\\.nuget\\packages\\identityserver4\\4.1.2\\identityserver4.4.1.2.nupkg.sha512",

@@ -492,11 +492,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\haticeo\\source\\repos\\EgitimIdentityServer\\EgitimIdentityServer.csproj",
+      "projectUniqueName": "C:\\Projects\\EgitimIdentity\\EgitimIdentityServer\\EgitimIdentityServer.csproj",
       "projectName": "EgitimIdentityServer",
-      "projectPath": "C:\\Users\\haticeo\\source\\repos\\EgitimIdentityServer\\EgitimIdentityServer.csproj",
+      "projectPath": "C:\\Projects\\EgitimIdentity\\EgitimIdentityServer\\EgitimIdentityServer.csproj",
       "packagesPath": "C:\\Users\\haticeo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\haticeo\\source\\repos\\EgitimIdentityServer\\obj\\",
+      "outputPath": "C:\\Projects\\EgitimIdentity\\EgitimIdentityServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

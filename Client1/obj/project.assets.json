@@ -555,11 +555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\haticeo\\source\\repos\\Client1\\Client1.csproj",
+      "projectUniqueName": "C:\\Projects\\EgitimIdentity\\Client1\\Client1.csproj",
       "projectName": "Client1",
-      "projectPath": "C:\\Users\\haticeo\\source\\repos\\Client1\\Client1.csproj",
+      "projectPath": "C:\\Projects\\EgitimIdentity\\Client1\\Client1.csproj",
       "packagesPath": "C:\\Users\\haticeo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\haticeo\\source\\repos\\Client1\\obj\\",
+      "outputPath": "C:\\Projects\\EgitimIdentity\\Client1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

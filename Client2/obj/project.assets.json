@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\haticeo\\source\\repos\\Client2\\Client2.csproj",
+      "projectUniqueName": "C:\\Projects\\EgitimIdentity\\Client2\\Client2.csproj",
       "projectName": "Client2",
-      "projectPath": "C:\\Users\\haticeo\\source\\repos\\Client2\\Client2.csproj",
+      "projectPath": "C:\\Projects\\EgitimIdentity\\Client2\\Client2.csproj",
       "packagesPath": "C:\\Users\\haticeo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\haticeo\\source\\repos\\Client2\\obj\\",
+      "outputPath": "C:\\Projects\\EgitimIdentity\\Client2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
